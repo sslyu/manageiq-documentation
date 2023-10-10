@@ -10,11 +10,7 @@ Lifecycle activities such as provisioning and retirement that are part of the {{
 
 - Lifecycle Management such as provisioning, customization, reconfiguration, approval, CMDB updates, and retirement.
 
-<div class="important">
-
-Provisioning requires the **Automation Engine** server role enabled. Check your server role settings in the settings menu. Go to the menu: **Settings** > **Application Settings**. On the **Server** tab, you can view the server role settings in the **Server Control** section.
-
-</div>
+**Important:** Provisioning requires the **Automation Engine** server role enabled. Check your server role settings in the settings menu. Go to the menu: **Settings** > **Application Settings**. On the **Server** tab, you can view the server role settings in the **Server Control** section.
 
 ## Provisioning
 
