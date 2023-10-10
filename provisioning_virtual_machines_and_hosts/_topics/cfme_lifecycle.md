@@ -1,4 +1,5 @@
 # {{ site.data.product.title_short }} Lifecycle
+{: #lifecycle}
 
 Lifecycle activities such as provisioning and retirement that are part of the {{ site.data.product.title_short }} Automate component. {{ site.data.product.title_short }} Automate enables real-time, bidirectional process integration and adaptive automation for management events and administrative or operational activities.
 
@@ -13,5 +14,6 @@ Lifecycle activities such as provisioning and retirement that are part of the {{
 **Important:** Provisioning requires the **Automation Engine** server role enabled. Check your server role settings in the settings menu. Go to the menu: **Settings** > **Application Settings**. On the **Server** tab, you can view the server role settings in the **Server Control** section.
 
 ## Provisioning
+{: #provisioning}
 
 When a virtual machine or cloud instance is provisioned, it goes through multiple phases. First, the request must be made. The request includes ownership information, tags, virtual hardware requirements, the operating system, and any customization of the request. Second, the request must go through an approval phase, either automatic or manual. Finally, the request is executed. This part of provisioning consists of pre-processing and post-processing. Pre-processing acquires IP addresses for the user, creates CMDB instances, and creates the virtual machine or instance based on information in the request. Post-processing activates the CMDB instance and emails the user. The steps for provisioning can be modified at any time by using {{ site.data.product.title_short }}. ![2314](../images/2314.png)
