@@ -1,8 +1,10 @@
 # Example: Using Amazon CloudFormation Template for Service Provisioning
+{: #ex_using_cloudformation_template_for_service_provisioning
 
 Cloud orchestration is a service that you can use to create, update, and manage cloud resources and their software components as a single unit and then deploy them in an automated, repeatable way through a template. The deployed instances and associated collection of resources are referred to as stack. {{ site.data.product.title_short }} supports Amazon CloudFormation orchestration templates that make deploying complex services easier in the cloud.
 
-# Creating an Orchestration Template
+## Creating an Orchestration Template
+{: #creating_an_orchestration_template}
 
 Complete the following procedure to add new orchestration templates.
 
@@ -22,7 +24,8 @@ Complete the following procedure to add new orchestration templates.
 
 You can add this template as a catalog item to a service catalog. Stacks can then be created from templates and launched from the service catalog by using a service dialog.
 
-# Creating a Service Dialog from an Orchestration Template
+## Creating a Service Dialog from an Orchestration Template
+{: #creating_a_service_dialog_from_an_orchestration_template}
 
 Complete the following procedure to create a service dialog based on the input parameters defined in the orchestration template.
 
@@ -36,7 +39,8 @@ Complete the following procedure to create a service dialog based on the input p
 
 5. Click **Save**.
 
-# Creating a Catalog
+## Creating a Catalog
+{: #creating_a_catalog}
 
 Complete the following procedure to create a new catalog.
 
@@ -50,7 +54,8 @@ Complete the following procedure to create a new catalog.
 
 5. Click **Add**.
 
-# Creating an Orchestration Catalog Item
+## Creating an Orchestration Catalog Item
+{: #creating_an_orchestration_catalog_item}
 
 Complete the following procedure to create a new orchestration catalog item.
 
@@ -74,7 +79,8 @@ Complete the following procedure to create a new orchestration catalog item.
 
 5. Click **Add**.
 
-# Ordering a Service
+## Ordering a Service
+{: #ordering_a_service}
 
 Complete the following procedure to order your catalog item from the service catalog.
 
@@ -96,7 +102,8 @@ Complete the following procedure to order your catalog item from the service cat
 
 The provisioning service request is submitted. When a request is approved, the various stages of fulfillment are processed. You can monitor the request status and other details in the menu: **Services** > **Requests**.
 
-# Orchestration Stacks
+## Orchestration Stacks
+{: #orchestration_staks}
 
 1. When the status of the provisioning request in the menu: **Services** > **Requests** is **Finished**, click menu: **Compute** > **Clouds** > **Stacks** to see the newly deployed stack.
 
