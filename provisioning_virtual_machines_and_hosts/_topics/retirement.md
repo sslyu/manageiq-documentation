@@ -7,21 +7,21 @@
 #### Retiring Virtual Machines and Instances
 {: #retiring_virtual_machines_and_instances}
 
-When a virtual machine or instance is no longer required, it can be retired. Once a virtual machine or instance reaches its retirement date, it is immediately shut down and not allowed to restart. If an attempt to restart is made, {{ site.data.product.title_short }} will shut down the virtual machine or instance.
+When a virtual machine or instance is no longer required, it can be retired. When a virtual machine or instance reaches its retirement date, it is immediately shut down and not allowed to restart. If an attempt to restart is made, {{ site.data.product.title_short }} shuts down the virtual machine or instance.
 
-There are three built-in policies involved with retirement:
+There are three built-in policies that are involved with retirement:
 
-- If the virtual machine or instance reaches its retirement date, it will be stopped even if it is running.
+- If the virtual machine or instance reaches its retirement date, it is stopped even if it is running.
 
-- If a retired virtual machine or instance is requested to start through {{ site.data.product.title_short }}, the virtual machine or instance will not be allowed to start.
+- If a retired virtual machine or instance is requested to start through {{ site.data.product.title_short }}, the virtual machine or instance is not allowed to start.
 
-- If a provider starts a retired virtual machine or instance outside of {{ site.data.product.title_short }}, the virtual machine or instance will be stopped.
+- If a provider starts a retired virtual machine or instance outside of {{ site.data.product.title_short }}, the virtual machine or instance is stopped.
 
 {{ site.data.product.title_short }} provides a number of ways to retire a virtual machine or instance:
 
 - By using the allocated buttons in the {{ site.data.product.title_short }} console.
 
-- When creating a provision request, a retirement date can be set up.
+- When you are creating a provision request, a retirement date can be set up.
 
 #### Using the Console to Retire a Virtual Machine
 {: #using_the_console_to_retire_a_virtual_machine}
@@ -31,20 +31,20 @@ Through the {{ site.data.product.title_short }} console, you can retire a virtua
 #### Retiring a Virtual Machine Immediately
 {: #retiring_a_virtual_machine_immediately}
 
-1. Navigate to menu:Compute\[Infrastructure \> Virtual Machines\].
+1. Navigate to the menu: **Compute** > **Infrastructure** > **Virtual Machines**.
 
 2. Select the virtual machine or instance that you want to retire.
 
 3. Click ![2007](../images/2007.png)(**Lifecycle**), then ![2010](../images/2010.png)(**Retire this VM/Instance**).
 
-The virtual machine or instance is immediately stopped, and will be shut down if an attempt is made to restart it.
+The virtual machine or instance is immediately stopped, and is shut down if an attempt is made to restart it.
 
 #### Setting a Retirement Date and Time for a Virtual Machine or Instance
 {: #setting_a_retirement_date_and_time_for_a_virtual_machine_or_instance}
 
-You can schedule virtual machine retirement by specifying a date and time, or by selecting a relative time a number of months, weeks, days or hours ahead of the present time.
+You can schedule virtual machine retirement by specifying a date and time, or by selecting a relative time a number of months, weeks, days, or hours ahead of the present time.
 
-1. Navigate to menu:Compute\[Infrastructure \> Virtual Machines\].
+1. Navigate to the menu: **Compute** > **Infrastructure** > **Virtual Machines**.
 
 2. Select the virtual machine or instance that you want to set a retirement date for.
 
@@ -54,15 +54,15 @@ You can schedule virtual machine retirement by specifying a date and time, or by
 
     1. To choose a **Specific Date and Time**, click the **Retirement Date and Time** field to open the calendar.
 
-        1. Select a retirement date using the calendar control.
+        1. Select a retirement date by using the calendar control.
 
-        2. Click ![clock](../images/clock.png) then select a retirement time (in UTC) using the arrows.
+        2. Click ![clock](../images/clock.png). Then, select a retirement time (in UTC) by using the arrows.
 
-    2. To retire the virtual machine using a relative time, select **Time Delay from Now**.
+    2. To retire the virtual machine by using a relative time, select **Time Delay from Now**.
 
-        1. From **Time Delay**, specify a retirement time any number of months, weeks, days, or hours in the future using the arrows.
+        1. From **Time Delay**, specify a retirement time any number of months, weeks, days, or hours in the future by using the arrows.
 
-5. Select a **Retirement Warning** if desired.
+5. Select a **Retirement Warning** if needed.
 
 6. Click **Save**.
 
@@ -71,7 +71,7 @@ The scheduled retirement date and time display in the virtual machine summary sc
 #### Removing a Retirement Date for a Virtual Machine or Instance
 {: #removing_a_retirement_date_for_a_virtual_machine_or_instance}
 
-1. Navigate to menu:Compute\[Infrastructure \> Virtual Machines\].
+1. Navigate to the menu: **Compute** > **Infrastructure** > **Virtual Machines**.
 
 2. Select the virtual machine or instance that you want to remove the retirement date from.
 
@@ -82,16 +82,16 @@ The scheduled retirement date and time display in the virtual machine summary sc
 ### Setting Retirement in a Provision Request
 {: #setting_retirement_in_a_provision_request}
 
-If you are using {{ site.data.product.title_short }} to provision, you can set when you want retirement in the provision request. To see how to create a request, see [Provisioning Requests](../provisioning_virtual_machines_and_hosts/#provisioning-requests). A warning email will be sent to the owner before the retirement.
+If you are using {{ site.data.product.title_short }} to provision, you can set when you want retirement in the provision request. To see how to create a request, see [Provisioning Requests](../provisioning_virtual_machines_and_hosts/#provisioning-requests). A warning email is sent to the owner before the retirement.
 
 #### Scheduling Retirement in a Provision Request
 {: #scheduling_retirement_in_a_provision_request}
 
-When provisioning a cloud instance or virtual machine, a multi-tabbed screen appears where you can set up your provision requests.
+When you are provisioning a cloud instance or virtual machine, a multi-tabbed screen appears where you can set up your provision requests.
 
 1. Click the **Schedule** tab to set when to provision your request and the lifespan of the virtual machine or instance.
 
-2. In **Lifespan**, you can choose to power on the virtual machines or instances after creation and set the **Time until Retirement**. If you select the time until retirement, you will select **Retirement Warning** accordingly.
+2. In **Lifespan**, you can choose to power on the virtual machines or instances after creation and set the **Time until Retirement**. If you select the time until retirement, select a **Retirement Warning** if needed.
 
 3. Click **Submit**.
 
@@ -100,12 +100,12 @@ When provisioning a cloud instance or virtual machine, a multi-tabbed screen app
 ### Extending Retirement Dates
 {: #extending_retirment_dates}
 
-{{ site.data.product.title_short }} **Automate** includes a method to extend the retirement of a virtual machine or instance by 14 days. This section describes how to create a button that invokes this method and how to edit the method to change the number of days.
+{{ site.data.product.title_short }} **Automate** includes a method to extend the retirement of a virtual machine or instance by 14 days. The following section describes how to create a button that invokes this method and how to edit the method to change the number of days.
 
 #### Creating a Custom Button to Extend Retirement
 {: #creating_a_custom_button_to_extend_retirement}
 
-1. Navigate to menu:Automation\[Embedded Automate \> Customization\].
+1. Navigate to the menu: **Automation** > **Embedded Automate** > **Customization**.
 
 2. Click the **Buttons** accordion.
 
@@ -115,7 +115,7 @@ When provisioning a cloud instance or virtual machine, a multi-tabbed screen app
 
 5. Click ![1847](../images/1847.png)(**Configuration**), then ![1862](../images/1862.png)(**Add a new Button**).
 
-6. Type in a button text and button hover text, and select the image you want to use.
+6. Type in a button text and button hover text, and select the image that you want to use.
 
 7. In **Object Details**, select **Request** from the **/System/Process/** dropdown. By default, the message is `create`. Do not change it.
 
@@ -126,16 +126,17 @@ When provisioning a cloud instance or virtual machine, a multi-tabbed screen app
 #### Changing the Number of Days to Extend Retirement
 {: #changing_the_number_of_days_to_extend_retirement}
 
-1. Navigate to menu:Automation\[Embedded Automate \> Explorer\].
+1. Navigate to the menu: **Automation** > **Embedded Automate** > **Explorer**.
 
-2. Click menu:DOMAIN\[Cloud \> VM \> Retirement \> Email \> System \> Request\].
+2. From the tree in the accordion menu, expand *DOMAIN* > **Cloud** > **VM** > **Retirement** > **Email** > **System** > **Request**.
+   **Notes**:
 
-   **Note:** DOMAIN must be a user-defined Domain and not the locked ManageIQ Domain. If necessary, you can copy the class from the ManageIQ domain into a custom domain.
+   - DOMAIN must be a user-defined Domain and not the locked ManageIQ Domain. If necessary, you can copy the class from the ManageIQ domain into a custom domain.
 
-   This example uses the **Cloud** Namespace, but you can also use the **Infrastructure** namespace.
+   - This example uses the **Cloud** Namespace, but you can also use the **Infrastructure** namespace.
 
 3. Click ![1847](../images/1847.png)(**Configuration**), then ![1851](../images/1851.png)(**Edit this Instance**).
 
-4. In the Value field, change the **vm\_retire\_extend\_days** attribute to the new value.
+4. In the Value field, change the **vm_retire_extend_days** attribute to the new value.
 
 5. Click **Save**. ![6299](../images/6299.png)
