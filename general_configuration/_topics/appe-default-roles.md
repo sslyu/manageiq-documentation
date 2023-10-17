@@ -1,9 +1,10 @@
 # Default Roles
+{: #default_roles}
 
-This section outlines the default roles provided in {{ site.data.product.title_short }} and
-the product features to which they are granted access.
+This section outlines the default roles provided in {{ site.data.product.title_short }} and the product features to which they are granted access.
 
 # EvmRole-super\_administrator
+{: #evmrole_super_admin}
 
 The `EvmRole-super_administrator` is granted access to the following
 product features.
@@ -15,9 +16,9 @@ product features.
 EvmRole-super\_administrator
 
 # EvmRole-administrator
+{: #evmrole_admin}
 
-The `EvmRole-administrator` is granted access to the following product
-features.
+The `EvmRole-administrator` is granted access to the following product features.
 
 | Product Feature                  |
 | -------------------------------- |
@@ -102,6 +103,7 @@ features.
 EvmRole-administrator
 
 # EvmRole-approver
+{: #evmrole_approver}
 
 The `EvmRole-approver` is granted access to the following product
 features.
@@ -199,6 +201,7 @@ features.
 EvmRole-approver
 
 # EvmRole-auditor
+{: #evmrole_auditor}
 
 The `EvmRole-auditor` is granted access to the following product
 features.
@@ -303,6 +306,7 @@ features.
 EvmRole-auditor
 
 # EvmRole-desktop
+{: #evmrole_desktop}
 
 The `EvmRole-desktop` is granted access to the following product
 features.
@@ -378,6 +382,7 @@ features.
 EvmRole-desktop
 
 # EvmRole-operator
+{: #evmrole_operator}
 
 The `EvmRole-operator` is granted access to the following product
 features.
@@ -513,6 +518,7 @@ features.
 EvmRole-operator
 
 # EvmRole-security
+{: #evmrole_security}
 
 The `EvmRole-security` is granted access to the following product
 features.
@@ -604,6 +610,7 @@ features.
 EvmRole-security
 
 # EvmRole-support
+{: #evmrole_support}
 
 The `EvmRole-support` is granted access to the following product
 features.
@@ -697,6 +704,7 @@ features.
 EvmRole-support
 
 # EvmRole-user
+{: #evmrole_user}
 
 The `EvmRole-user` is granted access to the following product features.
 
@@ -789,6 +797,7 @@ The `EvmRole-user` is granted access to the following product features.
 EvmRole-user
 
 # EvmRole-user\_limited\_self\_service
+{: #evmrole_user_limited_self_service}
 
 The `EvmRole-user_limited_self_service` is granted access to the
 following product features.
@@ -841,6 +850,7 @@ following product features.
 EvmRole-user\_limited\_self\_service
 
 # EvmRole-user\_self\_service
+{: #evmrole_user_self_service}
 
 The `EvmRole-user_self_service` is granted access to the following
 product features.
@@ -916,6 +926,7 @@ product features.
 EvmRole-user\_self\_service
 
 # EvmRole-vm\_user
+{: #evmrole_vm_user}
 
 The `EvmRole-vm_user` is granted access to the following product
 features.
@@ -995,6 +1006,7 @@ features.
 EvmRole-vm\_user
 
 # EvmRole-tenant\_administrator
+{: #evmrole_tenant_admin}
 
 The `EvmRole-tenant_administrator` is granted access to the following
 product features.
@@ -1066,6 +1078,7 @@ product features.
 EvmRole-tenant\_administrator
 
 # EvmRole-tenant\_quota\_administrator
+{: #evmrole_tenant_quota_admin}
 
 The `EvmRole-tenant_quota_administrator` is granted access to the
 following product features.
@@ -1128,6 +1141,7 @@ following product features.
 EvmRole-tenant\_quota\_administrator
 
 # EvmRole-consumption\_administrator
+{: #evmrole_consumption_admin}
 
 The `EvmRole-consumption_administrator` is granted access to the
 following product features.
@@ -1141,9 +1155,9 @@ following product features.
 EvmRole-consumption\_administrator
 
 # EvmRole-container\_administrator
+{: #evmrole_container_admin}
 
-The `EvmRole-container_administrator` is granted access to the following
-product features.
+The `EvmRole-container_administrator` is granted access to the following product features.
 
 | Product Feature                  |
 | -------------------------------- |
@@ -1197,6 +1211,7 @@ product features.
 EvmRole-container\_administrator
 
 # EvmRole-container\_operator
+{: #evmrole_container_operator}
 
 The `EvmRole-container_operator` is granted access to the following
 product features.
@@ -1248,6 +1263,7 @@ product features.
 EvmRole-container\_operator
 
 # EvmRole-reader
+{: #evmrole_reader}
 
 The `EvmRole-reader` is granted access to the following product
 features.
