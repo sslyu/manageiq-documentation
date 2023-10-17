@@ -16,7 +16,7 @@ The following menu items are available from the settings menu:
 
   - **Tasks**
 
-    This menu allows you to view virtual machine SmartState Analysis tasks that can be tracked through the console. The status of each task is displayed, including time started, time ended, what part of the task is currently running, and any errors encountered.
+    On the task menu, you can view virtual machine SmartState Analysis tasks that can be tracked through the console. The status of each task is displayed, including time started, time ended, what part of the task is currently running, and any errors encountered.
 
 **Application Settings**
 {: #application}
