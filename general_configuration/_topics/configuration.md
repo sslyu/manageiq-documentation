@@ -1,8 +1,10 @@
 ## Configuration
+{: #configuration}
 
 {% include configuration-gui.md %}
 
 ### Settings
+{: #settings}
 
 The options under the **Settings** area provide a hierarchical view of options that allow you to configure global options for the infrastructure of your {{ site.data.product.title_short }} environment. At the top level, you have **Settings** including users, LDAP Groups, account roles, capacity and utilization collection, tag categories, values, and imports, custom variable imports, and license uploads. When you click on
 **Settings** and expand it, you can configure **Analysis Profiles**, **Zones**, and **Schedules**.
@@ -12,6 +14,7 @@ The options under the **Settings** area provide a hierarchical view of options t
 When you go the **Settings** accordion, you are automatically taken to the server list under **Zones**.
 
 #### Regions
+{: #regions}
 
 Use **Regions** for centralizing data which is collected from public and private virtualization environments. A region is ultimately represented as a single database for the VMDB. Regions are particularly useful when
 multiple geographical locations need to be managed as they enable all the data collection to happen at each particular location and avoid data collection traffic across slow links between networks.
@@ -45,6 +48,7 @@ In this region, we have several {{ site.data.product.title_short }} appliances a
 All appliances can connect to the authentication services (Active Directory, LDAP, Identity Management), outgoing mail (SMTP), and network services (SNMP).
 
 ##### Region Scope
+{: #region_scope}
 
 Regions are used to consolidate data from multiple VMDBs to a central database. The database at the top level, the master VMDB, cannot be used for operational tasks such as SmartState Analysis or Capacity and Utilization data collection. It is intended for use as a reporting
 database that includes all information across multiple subordinate regions. The subordinate regions replicate their information to the master.
@@ -72,14 +76,17 @@ The subordinate regions are not aware of each other from a database perspective.
   - Replicates its data up to the master region.
 
 ##### Region Settings
+{: #region_settings}
 
 In the **Region** area, set items that apply to your entire {{ site.data.product.title_short }} infrastructure such as users, LDAP Groups, capacity and
 utilization collection, company tags and tag categories, and licensing.
 Regions are also used for database replication.
 
 ##### Capacity and Utilization Collection
+{: #capacity_utilization_collection}
 
 ###### Capacity and Utilization Collection Settings
+{: #capacity_utilization_collection_settings}
 
 Use **C & U Collection Settings** to select specifically which clusters and datastores you want to collect usage data for. By selecting a cluster, you are choosing to collect data for all hosts and virtual machines that are part of that cluster. You must also have a server with
 the Capacity & Utilization **Coordinator**, **Data Collector**, and **Data Processor** roles enabled as well. See Section **Server Control Settings**.
@@ -87,8 +94,8 @@ the Capacity & Utilization **Coordinator**, **Data Collector**, and **Data Proce
 After a provider has been discovered and its relationships refreshed, view the clusters, hosts, and datastores from the settings menu.
 Navigate to **Settings**, then click on **Application Settings**. Click the menu: **Settings** > **Region**, then select the **C & U Collection** tab.
 
-###### Enabling a Cluster, Host, or Datastore for Capacity and
-Utilization Collection
+###### Enabling a Cluster, Host, or Datastore for Capacity and Utilization Collection
+{: #enable_cluster_host_datastore_capacity_utilization_collection}
 
 To enable a cluster, host, or datastore for Capacity and Utilization Collection:
 
@@ -116,8 +123,10 @@ To enable a cluster, host, or datastore for Capacity and Utilization Collection:
     OpenStack Platform or Amazon EC2.
 
 ##### Tags
+{: #tags}
 
 ###### Company Tag Categories and Tags
+{: #company_tag_categories}
 
 {{ site.data.product.title_short }} allows you to create your own set of tags and tag
 categories. Use tags to create a customized, searchable index for your resources. Depending on your database type, your tags may be case sensitive. After creating these values, you can apply them to your resources. There are two kinds of tags.
@@ -129,6 +138,7 @@ categories. Use tags to create a customized, searchable index for your resources
   - **System tags** are assigned automatically by {{ site.data.product.title_short }}.
 
 ###### Creating a Tag Category
+{: #create_tag_category}
 
 To create a tag category:
 
@@ -183,6 +193,7 @@ If no values are created for a category, you are unable to assign a value from t
 
 
 ###### Deleting a Tag Category
+{: #delete_tag_category}
 
 To delete a tag category:
 
@@ -204,6 +215,7 @@ When you delete a tag category, the category values are removed, and any
 tags from the category are unassigned from all resources.
 
 ###### Creating a Company Tag
+{: #create_company_tag}
 
 To create a company tag:
 
@@ -230,6 +242,7 @@ To create a company tag:
 6.  Click **Add** once again to add the new entry to the table.
 
 ###### Deleting a Company Tag
+{: #delete_company_tag}
 
 To delete a company tag:
 
@@ -249,6 +262,7 @@ To delete a company tag:
 5.  Click **OK** to confirm.
 
 ###### Importing Tags for Virtual Machines
+{: #import_tag_vm}
 
 You can import a **CSV** file with tag assignments into the VMDB. For the import to be successful, be aware of the following:
 
@@ -264,6 +278,7 @@ You can import a **CSV** file with tag assignments into the VMDB. For the import
         rhel6,Department,Support
 
 ###### Importing Tags for a Virtual Machine from a CSV File
+{: #import_tag_vm_csv}
 
 To import tags for a virtual machine from a CSV file:
 
@@ -285,6 +300,7 @@ To import tags for a virtual machine from a CSV file:
 7.  Click **Apply**.
 
 ###### Importing Custom Values for Virtual Machines and Hosts
+{: #import_custom_values_vm_hosts}
 
 You can import a **CSV** file with asset tag information into the VMDB for a virtual machine or import custom values for hosts. For the import to be successful, the file must be in the following format, with one
 line for each virtual machine or host.
@@ -319,6 +335,7 @@ For hosts, the value for custom\_1 will show in the **Host Summary**
 page as the **Custom Identifier** in the **Properties** area. All of the custom values will show in the **Custom Fields** area.
 
 ###### Importing Asset Tags for a Virtual Machine from a CSV File
+{: #import_asset_tag_vm_csv}
 
 To import asset tags for a virtual machine from a CSV file
 
@@ -341,6 +358,7 @@ To import asset tags for a virtual machine from a CSV file
 8.  Click **Apply**.
 
 ##### Tag Mapping
+{: #tag_mapping}
 
 You can map labels from external providers to tags within {{ site.data.product.title_short }}.
 
@@ -353,6 +371,7 @@ You can map labels from external providers to tags within {{ site.data.product.t
 6. Click **Add**.     
 
 ##### Customizing the Help Menu
+{: #customize_help_menu}
 
 {{ site.data.product.title_short }} allows administrators to customize the help menu. Use this feature to define menu labels, URLs and how each window opens for users.
 
@@ -370,13 +389,16 @@ Customize the help menu using the following steps:
 5.  Click **Submit**.
 
 #### Profiles
+{: #profiles}
 
 ##### Creating an Analysis Profile
+{: #create_analysis_profile}
 
 You can create an analysis profile by referring to the sample profiles provided in the console. You can copy the sample profile or create a new
 one.
 
 ##### Creating a Host Analysis Profile
+{: #create_host_analysis_profile}
 
 To create a host analysis profile:
 
@@ -403,6 +425,7 @@ To create a host analysis profile:
 9.  Click **Add**.
 
 ##### Creating a Virtual Machine Analysis Profile
+{: #create_vm_analysis_profile}
 
 To create a virtual machine analysis profile:
 
@@ -432,6 +455,7 @@ To create a virtual machine analysis profile:
 12. Click **Add**.
 
 ##### Editing an Analysis Profile
+{: #edit_analysis_profile}
 
 To edit an analysis profile:
 
@@ -449,6 +473,7 @@ The changes are added to the analysis profile. The virtual machines or
 hosts must be re-analyzed to collect the new or modified information.
 
 ##### Copying an Analysis Profile
+{: #copy_analysis_profile}
 
 To copy an analysis profile:
 
@@ -466,6 +491,7 @@ To copy an analysis profile:
 7.  Click **Add**.
 
 ##### Setting a Default Analysis Profile
+{: #set_default_analysis_profile}
 
 If you want to set an analysis profile to be used for all virtual machines, you can create a default profile.
 
@@ -483,6 +509,7 @@ To create a default analysis profile:
 6.  Click **Save**.
 
 #### Zones
+{: #zones}
 
 You can organize your {{ site.data.product.title_short }} Infrastructure into zones to configure failover and isolate traffic. A provider that is discovered by a server in a specific zone gets monitored and managed in that zone. All jobs, such as a SmartState Analysis or VM power operation, dispatched by a server in a specific zone can get processed by any {{ site.data.product.title_short }} appliance assigned to that same zone.
 
@@ -500,6 +527,7 @@ Appliance A or B, but not C or D.
 Only users assigned the super administrator role can create zones. There must always be at least one zone. The **Default Zone** is provided and cannot be deleted.
 
 ##### Creating a Zone
+{: #create_zone}
 
 To create a zone:
 
@@ -519,6 +547,7 @@ To create a zone:
 8.  Click **Save**.
 
 ##### Deleting a Zone
+{: #delete_zone}
 
 To delete a zone:
 
@@ -537,6 +566,7 @@ To delete a zone:
 5.  Click **OK** to confirm.
 
 ##### Editing a Zone
+{: #edit_zone}
 
 To edit a zone:
 
@@ -551,7 +581,8 @@ To edit a zone:
 
 6.  Click **Save**.
 
-##### Adding SmartProxy Affinity to a Zone:
+##### Adding SmartProxy Affinity to a Zone
+{: #add_smartproxy_affinity_zone}
 
 Enable SmartProxy Affinity for zones containing servers with the SmartProxy role to run a SmartState Analysis.
 
@@ -565,6 +596,7 @@ To add SmartProxy Affinity to a zone:
 5.  Click **Save**.
 
 #### Servers
+{: #servers}
 
 Server settings enables you to control how each {{ site.data.product.title_short }} server
 operates including authentication, logging, and email. If you have multiple servers in your environment that are reporting to one central
@@ -575,6 +607,7 @@ VMDB, then you can edit some of these settings from the console by specifying wh
 The server selection options are only available if you have multiple servers sharing one VMDB.
 
 ##### Changing Server Settings
+{: #change_server_settings}
 
 To change server settings:
 
@@ -591,6 +624,7 @@ To change server settings:
 7.  Click **Save**.
 
 ###### Basic Information Settings ![2059](../images/2059.png)
+{: #basic_info_settings}
 
   - Use **Company Name** (maximum 20 characters) to customize the
     interface with your company’s name. You will see the company name
@@ -619,6 +653,7 @@ To change server settings:
   - Use **Default Locale** to specify the default language for this server.
 
 ###### Server Control Settings
+{: #server_control_settings}
 
 A server role defines what a server can do. Red Hat recommends that
 Database Operations, Event Monitor, Reporting, Scheduler, SmartState
@@ -638,6 +673,7 @@ are enabled by default on all servers.
     set this on all of the appliances.
 
 ###### Server Roles
+{: #server_roles}
 
 **Note:**
 
@@ -677,6 +713,7 @@ are enabled by default on all servers.
 | Websocket                             | This role enables starting or stopping websocket workers required for proxying remote consoles.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | N/A                  | Active/Active                      |
 
 ###### VMware Console Settings
+{: #vmware_console_settings}
 
 If you are using the {{ site.data.product.title_short }} control feature set, then you have
 the ability to connect to a Web console for virtual machines that are
@@ -710,12 +747,13 @@ the required software, you must specify its version in the
     provider must be registered to it. For vCenter version 4, the VMware
     vCenter Management Webservices must be running.
 
-###### NTP Servers Settings In the **NTP Servers** area, you can
-specify the NTP servers to use as source for clock synchronization here.
-The NTP settings specified here will override Zone NTP settings. Enter
-one NTP server hostname or IP address in each text box.
+###### NTP Servers Settings
+{: #ntp_server_settings}
+
+In the **NTP Servers** area, you can specify the NTP servers to use as source for clock synchronization here. The NTP settings specified here will override Zone NTP settings. Enter one NTP server hostname or IP address in each text box.
 
 ###### Configuring SNMP
+{: #configure_snmp}
 
 You can use Simple Network Management Protocol (SNMP) traps to send
 alerts for various aspects of a {{ site.data.product.title_short }} environment.
@@ -773,6 +811,7 @@ To set the failover priority role:
 5.  Click **Configuration**, and ![2097](../images/2097.png)**Promote Server** to make this the primary server for this role.
 
 ###### Outgoing SMTP Email Settings
+{: #outgoing_smtp_email_settings}
 
 To use the email action in {{ site.data.product.title_short }}, set an email address to send
 emails from.
@@ -806,6 +845,7 @@ enabled.
     Click **Verify** to send a test email.
 
 ###### Web Services Settings
+{: #web_services_settings}
 
 Web services are used by the server to communicate with the SmartProxy.
 
@@ -820,6 +860,7 @@ Web services are used by the server to communicate with the SmartProxy.
   - If **Web Services** are enabled, you have the option to use **ws-security**.
 
 ###### Logging Settings
+{: #logging_settings}
 
 ![2065](../images/2065.png)
 
@@ -828,6 +869,7 @@ Web services are used by the server to communicate with the SmartProxy.
     **debug**. The default setting is 'info'.
 
 ###### Custom Support URL Settings
+{: #custom_support_url_settings}
 
 ![2066](../images/2066.png)
 
@@ -837,11 +879,13 @@ Web services are used by the server to communicate with the SmartProxy.
   - Use **Description** to set a label for the **URL**.
 
 ##### Authentication
+{: #authentication}
 
 Use the **Authentication** tab to specify how you want users authenticated on the console. You can use the VMDB or integrate with
 LDAP, LDAPS, Amazon, or an external IPA server.
 
 ###### Changing Authentication Settings
+{: #changing_auth_settings}
 
 To change authentication settings:
 
@@ -862,6 +906,7 @@ To change authentication settings:
 8.  Click **Save**.
 
 ##### Workers
+{: #workers}
 
 Use the Workers page to specify the number of workers and amount of
 memory allowed to be used for each type.
@@ -871,6 +916,7 @@ memory allowed to be used for each type.
 Only make these changes when directed to by Red Hat Support.
 
 ###### Changing Settings for a Worker
+{: #change_settings_worker}
 
 To change the settings for a worker
 
@@ -891,6 +937,7 @@ To change the settings for a worker
 8.  Click **Save**.
 
 ##### Database
+{: #database}
 
 Use the Database page to specify the location of your Virtual Machine Database (VMDB) and its login credentials. By default, the type is
 PostgreSQL on the Server.
@@ -901,6 +948,7 @@ The server may not start if the database settings are changed. Be sure
 to validate your new settings before restarting the server.
 
 ###### Changing a Database Setting
+{: #change_database_setting}
 
 To change a database setting:
 
@@ -934,8 +982,10 @@ To change a database setting:
 During the restart, you are unable to access the server. When the restart is complete, the new database settings are in effect.
 
 ##### Customization and Logos
+{: #customization_logos}
 
 ###### Custom Logos
+{: #custom_logos}
 
 Use **Custom Logos** to display your own logo in the corner of the {{ site.data.product.title_short }} user interface and on the login screen. Use the procedures below to upload a custom logo to the user interface, and to
 customize the login background and login panel text on the user interface.
@@ -948,6 +998,7 @@ customize the login background and login panel text on the user interface.
     [Displaying the Custom Configuration Settings](#displaying-the-custom-configuration-settings) for the procedure on how to set the configuration settings.
 
 ###### Uploading a Custom Logo to the User Interface
+{: #upload_custom_logo_ui}
 
 **Note:**
 
@@ -982,6 +1033,7 @@ configuration settings for the tenant under **Access Control** is set to
 on how to set the configuration settings.
 
 ###### Customizing the Login Background
+{: #customize_login_background}
 
 **Note:**
 
@@ -1015,6 +1067,7 @@ To customize the login background:
 9.  Click **Save**.
 
 ###### Customizing the Login Panel Text
+{: #customize_login_panel_text}
 
 To customize the login panel text:
 
@@ -1037,6 +1090,7 @@ To customize the login panel text:
 8.  Click **Save**.
 
 ###### Displaying the Custom Configuration Settings
+{: #display_custom_config_settings}
 
 To enable displaying your custom logo in the corner of the
 {{ site.data.product.title_short }} user interface and on the login screen:
@@ -1058,6 +1112,7 @@ To enable displaying your custom logo in the corner of the
 6.  Click **Save**.
 
 ##### Advanced Settings
+{: #advanced_settings}
 
 You may be instructed by Red Hat to edit some configuration settings
 manually. This feature is available for a limited number of options and
@@ -1080,6 +1135,7 @@ Changing settings using this procedure may disable your
 </div>
 
 ###### Editing Configuration Files Manually
+{: #edit_config_manual}
 
 To edit configuration files manually:
 
@@ -1100,6 +1156,7 @@ To edit configuration files manually:
 6.  Click **Save**.
 
 ###### Configuration Parameters
+{: #config_parameters}
 
 Table: authentication
 
@@ -1468,8 +1525,10 @@ Table: workers
 | restart\_interval                                       | Queue workers restart interval. Default: 2.hours                                                                                                                                                                                                                                                                                                                                          |
 
 #### Schedules
+{: #schedules}
 
 ##### Scheduling SmartState Analyses
+{: #schedule_smartstate_analyses}
 
 From the **Schedules** area in **Settings**, you can schedule the
 analyses of virtual machines, hosts, clusters, and datastores to keep
@@ -1479,6 +1538,7 @@ one virtual machine or perform an analysis on all virtual machines. In
 addition, you can schedule compliance checks, and database backups.
 
 ###### Scheduling a SmartState Analysis or Compliance Check
+{: #schedule_smartstate_analysis_compliancecheck}
 
 To schedule a SmartState Analysis or Compliance Check:
 
@@ -1567,6 +1627,7 @@ To schedule a SmartState Analysis or Compliance Check:
 12. Click **Add**.
 
 ###### Modifying a Schedule
+{: #modify_schedule}
 
 To modify a schedule:
 
@@ -1584,6 +1645,7 @@ To modify a schedule:
 6.  Click **Save**.
 
 ##### Importing and Exporting Schedules
+{: #import_export_schedules}
 
 {{ site.data.product.title_short }} provides the ability to import and export
 schedules using the `import_export_schedules.rb` script:
@@ -1625,12 +1687,14 @@ schedules, including:
   - Service Template
 
 ### Access Control
+{: #access_control}
 
 Browse to **Settings** > **Application Settings**. Click
 on the **Access Control** accordion to see a hierarchy of the
 configurable items for users, groups, roles, and tenants. You can add and modify users, groups, account roles, tenants, and projects.
 
 #### Creating a Tenant
+{: #create_tenant}
 
 Tenants are used in {{ site.data.product.title_short }} for controlling visibility of
 objects.
@@ -1652,6 +1716,7 @@ To create a tenant:
 6.  Click **Add**.
 
 #### Creating a Project
+{: #create_project}
 
 A tenant can also contain a self-contained child tenant known as a
 'project'. A project cannot have a child tenant, but it is useful for
@@ -1676,6 +1741,7 @@ To create a project:
 6.  Click **Add**.
 
 #### Managing Tenant and Project Quotas
+{: #manage_tenant_project_quotas}
 
 Use the following procedure to allocate or edit quotas for tenants and
 projects.
